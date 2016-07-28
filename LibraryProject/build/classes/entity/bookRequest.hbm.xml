@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+	<class name="BookRequest" table="BookRequest">
+		<composite-id>
+			<key-many-to-one class="Users" name="user" column="Uname" lazy="false"/>
+			<key-many-to-one class="Books" name="book" column="BookName" lazy="false"/>
+		</composite-id>
+		<property name="issuedDate" type="date" />
+		<property name="requestedDate" type="date" />
+
+	</class>
+</hibernate-mapping>

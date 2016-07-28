@@ -1,0 +1,64 @@
+
+body{color:black;
+/* 	background-image:url('7.jpg'); */
+/* 	background-size:100%; */
+	background-repeat: no repeat;
+}
+a{
+	text-align: center;	
+	font-size: 12;
+	font-style: italic;	
+}
+.link{
+color:rgb(159,96,140)	
+}
+h1{
+	color:maroon;
+	font-style: normal;
+	font-family:cursive;
+}
+h4{font-weight:bolder;
+	text-align: right;
+	color: maroon;
+}
+form{
+	color:black;
+}
+.button{width:100%;
+color:buttontext;
+	font-style: normal;
+	font-family:cursive;
+	font-size: large;
+	background:transparent;
+	
+	}
+.mytable{	
+	color:black;
+	width: 100%;
+    border: 1px solid #414f23;
+    border-collapse: collapse;
+/*     background-color: rgb(192,192,192); */
+}
+.mytable2{
+	width: 100%;
+    border: 0px solid #414f23;
+    border-collapse: collapse;
+    border-style: hidden;
+	}
+	h3{
+	color: rgb(40,98,104);
+	font: serif;
+outline: maroon;}
+	
+	
+td{
+	text-align: center;	
+	font-size: 12;
+	font-style: italic;	
+}
+th{ text-align: center;	
+	font-size: 14;
+	font-style: italic;
+	color:maroon;
+	background-color:lavender;
+}

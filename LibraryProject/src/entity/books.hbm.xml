@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+       <class name="Books" table="Books">
+              <id name="bid"  type="int">
+              <generator class="identity"/>
+              </id>              
+             <property name="bname" column="Bname" type="string"/>             
+             <property name="author" column="Author" type="string"/> 
+             <property name="quantity" column="quantity" type="int"/>
+             
+             </class>
+             
+</hibernate-mapping>
+ 

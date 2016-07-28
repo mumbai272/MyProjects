@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+       <class name="Users" table="Users">
+              <id name="uname"  type="string">
+              <generator class="assigned"/>
+              </id>                        
+             <property name="pwd" column="Password" not-null="true" type="string"/> 
+             <property name="name" type="string" /> 
+             <property name="emailId" type="string" />  
+             <property name="role" type="string" />
+             <property name="address" type="string" /> 
+             <property name="phoneNo" type="string" />          
+             </class>
+             
+</hibernate-mapping>
+ 
