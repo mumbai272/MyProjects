@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.mindtree.entity">
+	<class name="Bugs" table="Bug">
+		<id name="bugId" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="bugDesc" type="string"/>
+		<property name="reportedDate" type="date"/>
+		<many-to-one  name="reportedBy" class="Employee" column="rep_empId" lazy="false"/>
+		<many-to-one  name="resolvedBy" class="Employee" column="res_empId" lazy="false"/>
+		<property name="resolvedDate" type="date"/>		
+	</class>
+</hibernate-mapping>
+ 
